@@ -19,7 +19,7 @@ export const Navbar = () =>{
               <Link className="text-white hover:text-[#F88379] transition-colors" to={"/communities"}><i className="bi bi-people-fill"></i></Link>
               <Link className="text-white hover:text-[#F88379] transition-colors" to={"/community/create"}><i className="bi bi-plus-circle-fill"></i></Link>
               <Link to={"/profile"}>
-                <img className="rounded-[50px] border-[#F88379] border-2" src={profilePicUrl} width={35} />
+                <img className="rounded-[50px] border-[#F88379] border-2" src={profilePicUrl} width={35} alt="profile" />
               </Link>
               <button className="cursor-pointer text-white" onClick={signOut}><i className="bi bi-box-arrow-right mr-3"></i></button>
             </div>
@@ -41,7 +41,7 @@ export const Navbar = () =>{
                   {" "}
                   {user ? (
                     <Link to={"/profile"}>
-                      <img className="rounded-[50px] m-2 border-[#F88379] border-2" src={profilePicUrl} width={40} />
+                      <img className="rounded-[50px] m-2 border-[#F88379] border-2" src={profilePicUrl} width={40} alt="profile" />
                     </Link>
                   ) : (
                     <div></div>

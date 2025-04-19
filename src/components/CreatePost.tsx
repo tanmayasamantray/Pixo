@@ -33,35 +33,42 @@ export const CreatePost = () =>{
             {" "}
             <div>
                 {" "}
-                <label>Title</label>
+                <label className="mx-3 my-2">
+                Title
                 <input
-                className="border-1 border-white m-3" type="text"
+                className="border-1 border-white mx-2" type="text"
                 id="title"
                 required 
                 onChange={(event) => setTitle(event.target.value)}
                 />
+                </label>
             </div>
             <div>
                 {" "}
-                <label>Content</label>
-                <textarea
-                className="border-1 border-white m-3"
-                id="content"
-                rows={5}
-                required
-                onChange={(event) => setContent(event.target.value)}
-                />
+                <label>
+                    Content
+                    <textarea
+                    className="border-1 border-white m-3"
+                    id="content"
+                    rows={5}
+                    required
+                    onChange={(event) => setContent(event.target.value)}
+                    />
+                </label>
+                
             </div>
             <div>
                 {" "}
-                <label>Upload Image</label>
-                <input
-                className="border-1 border-white m-3" 
-                type="file"
-                id="image"
-                accept="image/jpeg, image/png"
-                onChange={handleFileChange}
-                />
+                <label>Upload Image
+                    <input
+                    className="border-1 border-white m-3" 
+                    type="file"
+                    id="image"
+                    accept="image/jpeg, image/png"
+                    onChange={handleFileChange}
+                    />
+                </label>
+                
             </div>
             <button type="submit" className="bg-[#F88379] px-5 py-3 rounded-2xl cursor-pointer hover:bg-[#6e54a4]">Create Post</button>
         </form>
